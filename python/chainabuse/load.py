@@ -10,7 +10,7 @@ def format_category(cat_str):
 
 
 # DEFAULTS
-CONNECTION_STRING = 'mongodb+srv://maharshi-admin:qFFYWWw4ggc0PIFp@blockscope-contracts.gvnem.mongodb.net'
+# CONNECTION_STRING = 'mongodb+srv://maharshi-admin:qFFYWWw4ggc0PIFp@blockscope-contracts.gvnem.mongodb.net'
 DATBASE = 'smdata-prod'
 
 COLLECTIONS = {
