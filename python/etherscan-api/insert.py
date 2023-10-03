@@ -126,7 +126,9 @@ for i, entry in enumerate(new_labels):
             'type': DEFINITION,
             'label': entry['label'],
             'isSearchable': False,
-            'chains': [args.chain]
+            'chains': [args.chain],
+            'source': 'etherscan',
+            'priority': 1
         })
     )
 

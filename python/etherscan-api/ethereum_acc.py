@@ -7,8 +7,8 @@ URLS = {
     'ethereum': "https://etherscan.io/accounts.aspx/GetTableEntriesBySubLabel",
 }
 
-LABEL = "chainlink"
-SUB_CATEGORY_ID = "2"
+LABEL = "uniswap"
+SUB_CATEGORY_ID = "0"
 
 
 def generate_payload(page):
@@ -81,23 +81,29 @@ def generate_payload(page):
 
 HEADERS = {
     'authority': 'etherscan.io',
-    'accept': 'application/json, text/javascript, */*; q=0.01',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'no-cache',
-    'content-type': 'application/json',
-    'cookie': 'etherscan_cookieconsent=True; etherscan_address_format=0; etherscan_datetime_format=UTC; CultureInfo=en; displaymode=dim; __stripe_mid=6358dd39-4a45-4cdf-a51b-b1f2aa64284e948d32; etherscan_settings=x0:1|x1:1|x2:en|x3:USD|x4:0|x5:0|x6:ENS|x7:UTC|x8:0; etherscan_pwd=4792:Qdxb:e5RzxwPEz6t1giE73ZD3FS1hQDnwK5qNQtcbyYUhQUA=; etherscan_userid=rerakat332; etherscan_autologin=True; ASP.NET_SessionId=4ctajzmbtcmt0xnfvselz2ti; cf_clearance=S6vDALiWG.TAxpkOy.deGuTQRVEQXY0I.gSepOG.wuo-1694019552-0-1-dac0d38f.16bde013.8dc18c6f-150.2.1694018472; __cflb=02DiuFnsSsHWYH8WqVXcJWaecAw5gpnmetMbqovkRE6p4; __cuid=2b0ab155069c494ab647730188264955; amp_fef1e8=78c36e8c-82a3-49da-8bc1-4e17273b993dR...1h9lsvhhg.1h9lt05ih.10.6.16',
+    'cookie': 'etherscan_cookieconsent=True; etherscan_address_format=0; etherscan_datetime_format=UTC; CultureInfo=en; displaymode=dim; __stripe_mid=6358dd39-4a45-4cdf-a51b-b1f2aa64284e948d32; etherscan_settings=x0:1|x1:1|x2:en|x3:USD|x4:0|x5:0|x6:ENS|x7:UTC|x8:0; etherscan_pwd=4792:Qdxb:e5RzxwPEz6t1giE73ZD3FS1hQDnwK5qNQtcbyYUhQUA=; etherscan_userid=rerakat332; etherscan_autologin=True; __cuid=2b0ab155069c494ab647730188264955; amp_fef1e8=78c36e8c-82a3-49da-8bc1-4e17273b993dR...1h9lsvhhg.1h9lt05ih.10.6.16; __cflb=02DiuFnsSsHWYH8WqVXbZzkeTrZ6gtmGUeEzuaufC3JFv; ASP.NET_SessionId=hvplq2n3lukctfjrapzb0lhh; cf_chl_2=f88bf78d4523026; cf_clearance=xmw5YBxDKhjYI3CSIOYLFkspug7KUyUzGJVOPXfVhTI-1695740878-0-1-fe4282b9.df7d1216.a943dd59-150.2.1695740860',
     'dnt': '1',
-    'origin': 'https://etherscan.io',
     'pragma': 'no-cache',
-    'referer': 'https://etherscan.io/tokens/label/energy-sector?subcatid=0&size=50&start=0&col=3&order=desc',
-    'sec-ch-ua': '"Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"',
+    'referer': 'https://etherscan.io/accounts/label/lido',
+    'sec-ch-ua': '"Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-    'x-requested-with': 'XMLHttpRequest'
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
+    'Referer': 'https://etherscan.io/',
+    'DNT': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
+    'x-client-data': 'CI22yQEIprbJAQiKksoBCKmdygEIp/TKAQiSocsBCIWgzQEIusjNAQi5ys0BCIrTzQEYj87NAQ==',
+    'origin': 'https://etherscan.io',
+    'x-requested-with': 'XMLHttpRequest',
+    'content-type': 'application/json'
 }
 
 RUN_FLAG = True
