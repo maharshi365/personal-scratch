@@ -116,5 +116,5 @@ for line in lines:
 
 
 # find lines with keywords
-with open('sdnlist.json', 'w') as f:
+with open('data/sdnlist.json', 'w') as f:
     json.dump(lines, f)
