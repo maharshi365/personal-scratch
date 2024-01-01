@@ -166,5 +166,5 @@ env/*
 **/html/*
 .env
 **/node_modules/*
-
+**/crytic-export/*
 ```
