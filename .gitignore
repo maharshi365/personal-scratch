@@ -163,6 +163,7 @@ cython_debug/
 env/*
 .vscode/*
 **/data/*
+**/temp/*
 **/html/*
 .env
 **/node_modules/*
